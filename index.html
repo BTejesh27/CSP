@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,7 +31,7 @@
         nav a {
             color: white;
             text-decoration: none;
-            font-size: 1.2em;
+            font-size: 1em; /* Adjust font size */
             transition: color 0.3s ease-in-out;
         }
 
@@ -39,7 +40,7 @@
         }
 
         section {
-            padding: 2em;
+            padding: 1em; /* Adjust padding */
         }
 
         footer {
@@ -55,15 +56,17 @@
         .product-list {
             list-style-type: none;
             padding: 0;
+            margin: 0;
         }
 
         .product-list li {
             margin-bottom: 1em;
             cursor: pointer;
             background-color: #fff;
-            padding: 1em;
+            padding: 0.5em; /* Adjust padding */
             border: 1px solid #ccc;
             border-radius: 5px;
+            text-align: center; /* Center the text within list items */
             transition: background-color 0.3s ease-in-out;
         }
 
@@ -71,13 +74,29 @@
             background-color: #f9f9f9;
         }
 
+        .product-list li img {
+            max-width: 100%;
+            max-height: 150px; /* Set the maximum height */
+            border-radius: 5px;
+            margin: 0 auto; /* Center the image horizontally */
+            display: block; /* Remove any default inline behavior */
+            margin-bottom: 0.5em; /* Adjust margin */
+        }
+
         .product-description {
             display: none;
-            margin-top: 1em;
+            margin-top: 0.5em; /* Adjust margin */
         }
 
         .product-description h3 {
             color: #4CAF50;
+            font-size: 1.2em; /* Adjust font size */
+            margin-bottom: 0.5em; /* Adjust margin */
+        }
+
+        .product-description p {
+            font-size: 0.9em; /* Adjust font size */
+            margin-bottom: 0.5em; /* Adjust margin */
         }
     </style>
 </head>
@@ -94,35 +113,38 @@
         <a href="#">Contact</a>
     </nav>
 
-    <section>
+    <section style="margin-left:100px; margin-right:100px">
         <h2>Welcome to our Medical Shop!</h2>
 
         <ul class="product-list">
-            <li onclick="showDescription('Paracetamol')">Paracetamol</li>
+            <li onclick="showDescription('Paracetamol')">
+                <img src="paracetamol.jpg" alt="Paracetamol">
+                Paracetamol
+            </li>
             <div id="paracetamol-description" class="product-description">
                 <h3>Paracetamol</h3>
                 <p>Paracetamol is a common pain reliever and fever reducer. It is often used to relieve mild to moderate pain from conditions such as muscle aches, toothaches, and headaches.</p>
             </div>
-            <li onclick="showDescription('Aspirin')">Aspirin</li>
+            <li onclick="showDescription('Aspirin')">
+                <img src="aspirin.jpg" alt="Aspirin">
+                Aspirin
+            </li>
             <div id="aspirin-description" class="product-description">
                 <h3>Aspirin</h3>
                 <p>Aspirin is a nonsteroidal anti-inflammatory drug (NSAID) used to treat pain, fever, and inflammation. It is also used to prevent blood clots and reduce the risk of stroke and heart attack.</p>
             </div>
-            <li onclick="showDescription('Ibuprofen')">Ibuprofen</li>
+            <li onclick="showDescription('Ibuprofen')">
+                <img src="ibuprofen.jpg" alt="Ibuprofen">
+                Ibuprofen
+            </li>
             <div id="ibuprofen-description" class="product-description">
                 <h3>Ibuprofen</h3>
                 <p>Ibuprofen is a nonsteroidal anti-inflammatory drug (NSAID) used to relieve pain, reduce inflammation, and lower fever. It is commonly used to treat conditions such as arthritis, menstrual pain, and minor injuries.</p>
             </div>
-            <!-- Add more medicine names as needed -->
+            <!-- Add more medicine names and images as needed -->
         </ul>
-
-        
-
-       
-
-        
-        <!-- Add more descriptions as needed -->
     </section>
+    <br><br><br>
 
     <footer>
         &copy; Ganesh Medical Shop. All rights reserved.
