@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'BenchNine', sans-serif;
-}
+background-color: #debf46;}
 li {
     list-style: none;
 }
@@ -32,7 +32,7 @@ h2 {
 /*header area*/
 
 .top-header {
-    background: #fff !important;
+    background: #0aa7ce !important;
     position: fixed;
     width: 100%;
     z-index: 99999;
@@ -92,7 +92,7 @@ ul.nav {
     background-color: #000;
 }
 li a.active {
-    color: #42b3e5 !important;
+    color: #080237 !important;
 }
 .navbar-default .navbar-toggle {
     border-color: #fff;
@@ -126,7 +126,7 @@ li a.active {
 .carousel-caption button {
     width: 240px;
     height: 60px;
-    background: #3a9ecb;
+    background: #46cb3a;
     color: #fff;
     font-size: 30px;
     text-transform: uppercase;
