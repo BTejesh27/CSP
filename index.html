@@ -27,7 +27,7 @@
 			<div class="row">
 				<div class="col-xs-5 header-logo">
 					<br>
-					<a href="index.html"><img src="img/logo.png" alt="" class="img-responsive logo"></a>
+					<h1 style="padding: 15px;">GANESH Medicals</h1>
 				</div>
 
 				<div class="col-md-7">
@@ -72,7 +72,7 @@
 			            	<img src="img/slide-one.jpg" alt="">
 			                <div class="carousel-caption">
 		               			<h1>providing</h1>
-		               			<p>highquality service for men &amp; women</p>
+		               			<p>highquality service for children,men &amp; women</p>
 		               			
 			                </div>
 			            </div>
@@ -80,7 +80,7 @@
 			            	<img src="img/slide-two.jpg" alt="">
 			                <div class="carousel-caption">
 		               			<h1>providing</h1>
-		               			<p>highquality service for men &amp; women</p>
+		               			<p>highquality service for children, men &amp; women</p>
 		               			
 			                </div>
 			            </div>
@@ -88,7 +88,7 @@
 			            	<img src="img/slide-three.jpg" alt="">
 			                <div class="carousel-caption">
 		               			<h1>providing</h1>
-		               			<p>highquality service for men &amp; women</p>
+		               			<p>highquality service for children, men &amp; women</p>
 		               			
 			                </div>
 			            </div>
@@ -96,7 +96,7 @@
 			            	<img src="img/slide-four.jpg" alt="">
 			                <div class="carousel-caption">
 		               			<h1>providing</h1>
-		               			<p>highquality service for men &amp; women</p>
+		               			<p>highquality service for children,men &amp; women</p>
 			                </div>
 			            </div>
 			        </div>
@@ -166,7 +166,42 @@
 			</div>
 		</div>
 	</section><!-- end of about section -->
+	<br>
+	<br>
+	<div style="padding-top: 5em; padding-left: 10em; padding-right: 10em;padding-bottom:3em; background-color:#3a9ecb">
+		 <ul class="product-list">
+		<li onclick="showDescription('Paracetamol')" style="margin-left: 250px;margin-right: 250px;">
+			<img src="paracetamol.jpg" alt="Paracetamol">
+			Paracetamol
+		</li>
+		
+		<div id="paracetamol-description" class="product-description">
+			<h3>Paracetamol</h3>
+			<h4>Paracetamol is a common pain reliever and fever reducer. It is often used to relieve mild to moderate pain from conditions such as muscle aches, toothaches, and headaches.</h4>
+		</div><br>
+		<br>
+		<li onclick="showDescription('Aspirin')" style="margin-left: 250px;margin-right: 250px;">
+			<img src="aspirin.jpg" alt="Aspirin">
+			Aspirin
+		</li>
+		<div id="aspirin-description" class="product-description">
+			<h3>Aspirin</h3>
+			<h4>Aspirin is a nonsteroidal anti-inflammatory drug (NSAID) used to treat pain, fever, and inflammation. It is also used to prevent blood clots and reduce the risk of stroke and heart attack.</h4>
+		</div><br>
+		<br>
+		<li onclick="showDescription('Ibuprofen')"style="margin-left: 250px;margin-right: 250px;">
+			<img src="ibuprofen.jpg" alt="Ibuprofen">
+			Ibuprofen
+		</li>
+		<div id="ibuprofen-description" class="product-description">
+			<h3>Ibuprofen</h3>
+			<h4>Ibuprofen is a nonsteroidal anti-inflammatory drug (NSAID) used to relieve pain, reduce inflammation, and lower fever. It is commonly used to treat conditions such as arthritis, menstrual pain, and minor injuries.</h4>
+		</div>
+		<!-- Add more medicine names and images as needed -->
+	</ul>
 
+	</div>
+	
 
 	<!-- service section starts here -->
 	<section class="service text-center" id="service">
@@ -354,5 +389,20 @@
 	<script src="js/smoothscroll.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/custom.js"></script>
+	<script>
+        function showDescription(productName) {
+            // Hide all descriptions
+            const descriptions = document.querySelectorAll('.product-description');
+            descriptions.forEach(description => {
+                description.style.display = 'none';
+            });
+
+            // Show the selected description
+            const selectedDescription = document.getElementById(`${productName.toLowerCase()}-description`);
+            if (selectedDescription) {
+                selectedDescription.style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>

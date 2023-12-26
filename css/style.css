@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'BenchNine', sans-serif;
-background-color: #debf46;}
+background-color: #d6c891;}
 li {
     list-style: none;
 }
@@ -899,3 +899,49 @@ responsive area
         font-size: 10px;
     }
 }
+.product-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-list li {
+    margin-bottom: 1em;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 0.5em; /* Adjust padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center; /* Center the text within list items */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.product-list li:hover {
+    background-color: #f9f9f9;
+}
+
+.product-list li img {
+    max-width: 100%;
+    max-height: 150px; /* Set the maximum height */
+    border-radius: 5px;
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Remove any default inline behavior */
+    margin-bottom: 0.5em; /* Adjust margin */
+}
+
+.product-description {
+    display: none;
+    margin-top: 0.5em; /* Adjust margin */
+}
+
+.product-description h3 {
+    color: #000000;
+    font-size: 4em; /* Adjust font size */
+    margin-bottom: 0.5em; /* Adjust margin */
+}
+
+.product-description p {
+    font-size: 0.9em; /* Adjust font size */
+    margin-bottom: 0.5em; /* Adjust margin */
+}
+
